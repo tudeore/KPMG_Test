@@ -1,0 +1,29 @@
+module "resource_group" {
+  source = "./Modules"
+  rg_name = var.rg_name
+  location = var.location
+  vnet_name = var.vnet_name
+  address_space = var.address_space
+  vm_name = var.vm_name
+  vm_size = var.vm_size
+  os_disk_caching = var.os_disk_caching
+  subnet_address_prefix = var.subnet_address_prefix
+  admin_passsword = var.admin_passsword
+  admin_username = var.admin_username
+  sqlserver_name = var.sqlserver_name
+  sqldb_name = var.sqldb_name
+  sql_skuname = var.sql_skuname
+  sql_username = var.sql_username
+  sql_password = var.sql_password
+  storage_account_type = var.storage_account_type
+  firewall_name = var.firewall_name
+mssql_version = var.mssql_version
+image_sku = var.image_sku
+image_version = var.image_version
+nic_name = var.nic_name
+subnet_name = var.subnet_name
+firewall_startIp = var.firewall_startIp
+firewall_endIp = var.firewall_endIp
+nsg_name = var.nsg_name
+vm-ip = var.vm-ip
+}
